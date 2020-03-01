@@ -1,7 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 MAIN_LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
-LOCAL_MODULE := hook
+LOCAL_MODULE := wolve
 
 LOCAL_CFLAGS := -Wno-error=format-security -fpermissive
 LOCAL_CFLAGS += -fno-rtti -fno-exceptions
