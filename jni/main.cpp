@@ -14,7 +14,7 @@ const char* libName = "libil2cpp.so";
 
 void(*old_Player_Update)(void *instance);
 void Player_Update(void *instance) {
-    //Check if instance is a nullptr to prevent crashes!  If the instance object is a nullptr, 
+    //Check if instance is NULL to prevent crashes!  If the instance object is NULL, 
     //this is what the call to update would look like in C++: 
     //NULL.Update(); and dat doesnt make sense right?
     if(instance != NULL) {
