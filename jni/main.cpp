@@ -19,9 +19,11 @@ void Player_Update(void *instance) {
     //NULL.Update(); and dat doesnt make sense right?
     if(instance != NULL) {
         if(!PlayerUpdateHookInitialized){
+            //Check if this hook initialized. If so log 
             PlayerUpdateHookInitialized = true;
             LOGI("Player_Update hooked");
         }
+        //Your code here
     }
     old_Player_Update(instance);
 }
@@ -41,7 +43,7 @@ void* hack_thread(void*) {
 }
 
 __attribute__((constructor))
-void libhook_main() {
+void libwolve_main() {
     pthread_t ptid;
     pthread_create(&ptid, NULL, hack_thread, NULL);
 }
