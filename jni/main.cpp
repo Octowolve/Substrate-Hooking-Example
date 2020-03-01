@@ -26,8 +26,10 @@ void Player_Update(void *instance) {
     old_Player_Update(instance);
 }
 
-
+// we will run our patches in a new thread so our while loop doesn't block process main thread
 void* hack_thread(void*) {
+    LOGI("I have been loaded. Mwuahahahaha");
+    // loop until our target library is found
     do {
         sleep(1);
     } while (!isLibraryLoaded(libName));
@@ -40,7 +42,6 @@ void* hack_thread(void*) {
 
 __attribute__((constructor))
 void libhook_main() {
-    LOGI("I have been loaded. Mwuahahahaha");
     pthread_t ptid;
     pthread_create(&ptid, NULL, hack_thread, NULL);
 }
