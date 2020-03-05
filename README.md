@@ -8,3 +8,6 @@ This is a simple template for the usage of Cydia Substrate.
 
 
 A thread on a forum with mod menu source https://guidedhacking.com/threads/substrate-hooking-template-mod-menu.14674/#post-89655
+
+
+Also consider joining my Discord Server https://discord.gg/bmRCJQ3
