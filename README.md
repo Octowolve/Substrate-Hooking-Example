@@ -7,3 +7,4 @@ This is a simple template for the usage of Cydia Substrate.
 * Download this github files somewhere to your PC.
 
 
+A thread on a forum with mod menu source https://guidedhacking.com/threads/substrate-hooking-template-mod-menu.14674/#post-89655
